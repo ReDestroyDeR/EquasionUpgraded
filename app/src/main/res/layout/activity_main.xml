@@ -8,72 +8,79 @@
     tools:context="com.example.myapplication.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/doubleEqTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title2"
         android:textSize="24dp" />
 
     <EditText
-        android:id="@+id/coefficient_a2"
+        android:id="@+id/doubleEq_coefficient_a"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/a" />
 
     <EditText
-        android:id="@+id/coefficient_b2"
+        android:id="@+id/doubleEq_coefficient_b"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/b" />
 
     <EditText
-        android:id="@+id/coefficient_c2"
+        android:id="@+id/doubleEq_coefficient_c"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/c" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/solveDoubleEq"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="solveDoubleEquasion"
         android:text="@string/calculate" />
 
     <TextView
-        android:id="@+id/result2"
+        android:id="@+id/doubleEqResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="24dp" />
 
     <TextView
+        android:id="@+id/normalEqTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24dp"
-        android:text="@string/title" />
+        android:text="@string/title"
+        android:textSize="24dp" />
+
     <EditText
+        android:id="@+id/normalEq_coefficient_a"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/coefficient_a"
-        android:hint="@string/a"/>
+        android:hint="@string/a" />
+
     <EditText
+        android:id="@+id/normalEq_coefficient_b"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/coefficient_b"
-        android:hint="@string/b"/>
+        android:hint="@string/b" />
+
     <EditText
+        android:id="@+id/normalEq_coefficient_c"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/coefficient_c"
-        android:hint="@string/c"/>
+        android:hint="@string/c" />
+
     <Button
+        android:id="@+id/solveNormalEq"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="solveEquation"
-        android:text="@string/calculate"/>
+        android:text="@string/calculate" />
+
     <TextView
+        android:id="@+id/normalEqResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24dp"
-        android:id="@+id/result"/>
+        android:textSize="24dp" />
 
 </LinearLayout>

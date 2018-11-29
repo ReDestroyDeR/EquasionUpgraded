@@ -21,11 +21,11 @@ public class MainActivity extends Activity {
     public void solveEquation(View view) {
         // ax+b=c
         double a = Double.parseDouble(((EditText)
-                findViewById(R.id.coefficient_a)).getText().toString());
+                findViewById(R.id.normalEq_coefficient_a)).getText().toString());
         double b = Double.parseDouble(((EditText)
-                findViewById(R.id.coefficient_b)).getText().toString());
+                findViewById(R.id.normalEq_coefficient_b)).getText().toString());
         double c = Double.parseDouble(((EditText)
-                findViewById(R.id.coefficient_c)).getText().toString());
+                findViewById(R.id.normalEq_coefficient_c)).getText().toString());
         TextView result = (TextView) findViewById(R.id.result);
         result.setText("" + String.valueOf((c - b) / a));
     }
@@ -33,11 +33,11 @@ public class MainActivity extends Activity {
     // Solving double square equasion through D
     public void solveDoubleEquasion(View view) {
         double a = Double.parseDouble(((EditText)
-                findViewById(R.id.coefficient_a2)).getText().toString());
+                findViewById(R.id.doubleEq_coefficient_a)).getText().toString());
         double b = Double.parseDouble(((EditText)
-                findViewById(R.id.coefficient_b2)).getText().toString());
+                findViewById(R.id.doubleEq_coefficient_b)).getText().toString());
         double c = Double.parseDouble(((EditText)
-                findViewById(R.id.coefficient_c2)).getText().toString());
+                findViewById(R.id.doubleEq_coefficient_c)).getText().toString());
 
         /*
          * D = b^2 - 4ac
@@ -69,7 +69,7 @@ public class MainActivity extends Activity {
         }
 
 
-        TextView result = (TextView) findViewById(R.id.result2);
+        TextView result = (TextView) findViewById(R.id.normalEqResult);
         result.setText(resultString);
 
     }
